@@ -64,6 +64,33 @@
             border: solid #c0c0c0 1px;
         }
         /*End first tier hnavbar*/
+        /*HNavbar dropdown functionality*/
+        .hnavbar ul{
+            background: transparent;
+            list-style: none;
+            position: absolute;
+            left: -9999px;
+        }
+        .hnavbar ul li{
+            padding-top: 0px;
+            float: none;
+            width: 150%;
+        }
+        .hnavbar ul a{
+            white-space: nowrap;
+        }
+        .hnavbar li:hover ul{left:0;}
+        .hnavbar li:hover a{ 
+            background: #2e2e2e;
+            text-decoration: none;
+        }
+        .hnavbar li:hover ul a{
+            text-decoration: none;
+        }
+        .hnavbar li:hover ul li a:hover{
+            background: #696969;
+        }
+        /*End Dropdown functionality*/
         .main{
             width: 90%;
             padding: 0 5%;
@@ -103,7 +130,13 @@
     <nav id="nowhere">
         <ul class="hnavbar">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#nowhere">About Us</a></li>
+            <li><a href="#nowhere">About Us</a>
+                <ul>
+                    <li><a href="#nowhere">2nd Tier Link</a></li>
+                    <li><a href="#nowhere">2nd Tier Link</a></li>
+                    <li><a href="#nowhere">2nd Tier Link</a></li>
+                </ul>
+            </li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
