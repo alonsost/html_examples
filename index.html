@@ -38,6 +38,32 @@
             margin: 1% 5% 0 5%;
             float: left;
         }
+        /*Horizontal Navbar*/
+        .hnavbar{
+            list-style: none;
+            margin-bottom: 0;
+            float: left;
+            position: relative;
+            z-index:  5;
+        }
+        .hnavbar li{
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 0px;
+            position: relative;
+        }
+        .hnavbar a{
+            display: block;
+            padding: 5px;
+            color: #fffffe;
+            border: solid #696969 1px;
+            text-decoration: none;
+        }
+        .hnavbar a:hover{
+            text-decoration: none;
+            border: solid #c0c0c0 1px;
+        }
+        /*End first tier hnavbar*/
         .main{
             width: 90%;
             padding: 0 5%;
@@ -55,7 +81,11 @@
         <h1>I Love Responsive Web Design</h1>
     </header>
     <nav id="nowhere">
-
+        <ul class="hnavbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#nowhere">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
     </nav>
     <div class="main">
 
